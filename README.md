@@ -22,9 +22,20 @@ A lightweight Python script that generates a countdown tweet for any event, with
 
 2. **Install Dependencies**  
    - This script uses only Python’s built-in libraries (`datetime` and `os`), so no additional installations are required.
-
-3. **Customize the Script**  
-   - Open `countdown.py` in a text editor (e.g., Notepad or VS Code).
+   - Install Tweepy via pip:  
+     ```
+     pip install tweepy
+     ```
+3. **Set Up Twitter API Credentials**  
+   - Go to the [Twitter Developer Portal](https://developer.twitter.com/), create an app, and generate:  
+     - API Key  
+     - API Secret  
+     - Access Token  
+     - Access Token Secret  
+   - Open `TrumpCountdown.py` and replace the placeholder values (`your_api_key`, etc.) with your credentials.
+  
+4. **Customize the Script**  
+   - Open `TrumpCountdown.py` in a text editor (e.g., Notepad or VS Code).
    - Modify the `END_DATE` variable to your desired countdown end date (e.g., `datetime(2029, 1, 20)` for Trump’s hypothetical term end).
    - Optionally, tweak the tweet text, emojis, or hashtags in the `tweet` string.
 
@@ -52,7 +63,7 @@ A lightweight Python script that generates a countdown tweet for any event, with
  - Click "New" and set:  
    - Action: `Start a program`.  
    - Program/script: Full path to Python (e.g., `C:\Python39\python.exe`).  
-   - Add arguments: Full path to your script (e.g., `C:\Users\YourName\TwitterCountdown\countdown.py`).  
+   - Add arguments: Full path to your script (e.g., `C:\Users\YourName\TwitterCountdown\TrumpCountdown.py`).  
    - Start in: Folder containing your script (e.g., `C:\Users\YourName\TwitterCountdown`).  
    - Click OK.
 
