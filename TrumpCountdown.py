@@ -55,10 +55,17 @@ def post_twitter_update(twitter_obj, version):
     """Posts a tweet and logs all details, including API response."""
     try:
         END_OF_TRUMP_TERM = datetime.date(2029, 1, 20)
+        END_OF_THIRD_TERM = datetime.date(2033, 1, 20)  # Added for third term calculation
         today = datetime.date.today()
         days_left = (END_OF_TRUMP_TERM - today).days
+        third_term_days_left = (END_OF_THIRD_TERM - today).days
 
-        message = f"There are now only {days_left} days until Trump is no longer President! 🗳️🇺🇸✨\n\n#USPolitics #Trump #Countdown #dkpol"
+        # Base message
+        message = f"Only {days_left} days until Trump’s term ends! 🗳️🇺🇸⏳.\n"
+        # Additional line for third term
+        message += f"Unless he takes a 3rd term - then {third_term_days_left} days left.\n\n"
+        message += "#USPolitics #Trump #Countdown #dkpol #Election2028 #AmericaFirst #News #Trump2024 #Trump2028"
+
         log_message(f"Attempting to post tweet: {message}")
 
         # Post tweet based on Tweepy version
