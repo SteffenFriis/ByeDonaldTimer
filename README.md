@@ -84,4 +84,4 @@ A lightweight Python script that generates a countdown tweet for any event, with
 Feel free to fork this repo, submit pull requests, or open issues with suggestions!
 
 ## License
-This project is open-source and free to use under the [MIT License](LICENSE.md).
+This project is open-source and free to use under the [MIT License](license.md).
